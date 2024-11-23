@@ -16,11 +16,7 @@ new class extends Component {
 
 <nav class="bg-secondary border-gray-200 dark:bg-gray-900">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="{{asset( 'assets/images/logo.png' )}}" alt="Flowbite Logo"
-                class="rounded-full w-20 h-20 shadow-light shadow-2xl" />
-            <span class="self-center text-5xl  whitespace-nowrap dark:text-white font-title">Bazar</span>
-        </a>
+        <x-common.logo />
         <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <button type="button"
                 class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"

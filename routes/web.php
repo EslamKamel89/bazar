@@ -15,6 +15,6 @@ Route::view( 'profile', 'profile' )
 require __DIR__ . '/auth.php';
 
 //? App Routes
-Route::get( '/', Homepage::class);
+Route::get( '/', Homepage::class)->name( 'home' );
 
 

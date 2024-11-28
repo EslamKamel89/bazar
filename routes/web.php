@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\ProductShowController;
 use App\Livewire\Homepage;
+use App\Livewire\Product\ProductShow;
 use Illuminate\Support\Facades\Route;
 
 //? Breeze
@@ -16,5 +18,5 @@ require __DIR__ . '/auth.php';
 
 //? App Routes
 Route::get( '/', Homepage::class)->name( 'home' );
-
+Route::get( '/products/{product:slug}', ProductShow::class);
 
